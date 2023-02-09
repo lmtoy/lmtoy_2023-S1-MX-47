@@ -21,6 +21,9 @@ project="2023-S1-MX-47"
 
 #        obsnums per source (make it negative if not added to the final combination)
 on = {}
+
+on["11863-3703"] =  [ 105120, 105121, 105122,]                                        # feb 9
+
 on["9487-9102"] = [ 104790, 104791, 104792, 104794, 104795, 104796, 104798, 104799,
                     104800, 104803, 104804, 104805, 104807, 104808, 104809, 104811,
                     104812, 104813, 104828, 104829, 104830, 104832, 104833,           # feb 6
@@ -28,11 +31,13 @@ on["9487-9102"] = [ 104790, 104791, 104792, 104794, 104795, 104796, 104798, 1047
 
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
+pars1["11863-3703"] = ""
 pars1["9487-9102"] = "xlines=110.7,0.3"
 
 
 #        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}
+pars2["11863-3703"] = ""
 pars2["9487-9102"] = "srdp=1 admit=0"
 
 runs.mk_runs(project, on, pars1, pars2)
