@@ -34,13 +34,13 @@ on["9487-9102"] = [ 104790, 104791, 104792, 104794, 104795, 104796, 104798, 1047
 
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
-pars1["11863-3703"] = ""
-pars1["9487-9102"] = "xlines=110.7,0.3"
+pars1["11863-3703"] = "xlines=110.6,0.3"
+pars1["9487-9102"]  = "xlines=110.7,0.3"
 
 
 #        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}
-pars2["11863-3703"] = ""
-pars2["9487-9102"] = "srdp=1 admit=0"
+pars2["11863-3703"] = "srdp=1 admit=0"
+pars2["9487-9102"]  = "srdp=1 admit=0"
 
 runs.mk_runs(project, on, pars1, pars2)
