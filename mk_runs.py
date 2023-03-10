@@ -1,8 +1,7 @@
 #! /usr/bin/env python
 #
-#   script generator for project="2021-S1-US-3"
+#   script generator 
 #
-#   lmtinfo.py grep US-3 Science Map | awk '{print $2}' | sort
 
 
 import os
