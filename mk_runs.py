@@ -80,13 +80,13 @@ pars1["9487-9102"]   = "xlines=110.7,0.3"
 
 #        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}
-pars2["10218-12703"] = ""
-pars2["11863-3703"] = "srdp=1 admit=0"
-pars2["7991-1901"] = ""
-pars2["8553-9102"] = ""
-pars2["8593-12705"] = ""
-pars2["8998-12705"] = ""
-pars2["9186-9101"] = ""
-pars2["9487-9102"]  = "srdp=1 admit=0"
+pars2["10218-12703"] = "srdp=1 admit=0"
+pars2["11863-3703"]  = "srdp=1 admit=0"
+pars2["7991-1901"]   = "srdp=1 admit=0"
+pars2["8553-9102"]   = "srdp=1 admit=0"
+pars2["8593-12705"]  = "srdp=1 admit=0"
+pars2["8998-12705"]  = "srdp=1 admit=0"
+pars2["9186-9101"]   = "srdp=1 admit=0"
+pars2["9487-9102"]   = "srdp=1 admit=0"
 
 runs.mk_runs(project, on, pars1, pars2)
