@@ -7,14 +7,7 @@
 import os
 import sys
 
-# in prep of the new lmtoy module
-try:
-    lmtoy = os.environ['LMTOY']
-    sys.path.append(lmtoy)
-    from lmtoy import runs
-except:
-    print("No LMTOY with runs.py")
-    sys.exit(0)
+from lmtoy import runs
 
 project="2023-S1-MX-47"
 
@@ -34,6 +27,10 @@ on["11863-3703"] =  [ 105120, 105121, 105122,                                   
                       105773, 105774, 105775, 105777, 105778, 105779,
                       105781, 105782, 105783, 105785, 105786, 105787,
                       105790, 105791, 105792,]                                       # feb 15
+
+on["11944-12704"] =  [ 109042, 109043, 109044, 109046, 109047, 109048,
+                       109050, 109051, 109052, 109056, 109057, 109058,
+                       109060, 109061, 109062, 109064, 109065, 109066,]             # apr 28
 
 on["7991-1901"] =  [ 107366, 107367, 107368, 107371, 107372, 107373,
                      107376, 107377, 107378, 107381, 107382, 107383,]                # mar 23/24
@@ -70,6 +67,7 @@ on["9487-9102"] = [ 104790, 104791, 104792, 104794, 104795, 104796, 104798, 1047
 pars1 = {}
 pars1["10218-12703"] = "xlines=110.2,0.3"
 pars1["11863-3703"]  = "xlines=110.6,0.3"
+pars1["11944-12704"] = ""
 pars1["7991-1901"]   = ""                      # nothing obvious
 pars1["8553-9102"]   = "xlines=107.4,0.3"
 pars1["8593-12705"]  = "xlines=110.2,0.3"
@@ -82,11 +80,14 @@ pars1["9487-9102"]   = "xlines=110.7,0.3"
 pars2 = {}
 pars2["10218-12703"] = "srdp=1 admit=0"
 pars2["11863-3703"]  = "srdp=1 admit=0"
+pars2["11944-12704"] = "srdp=1 admit=0"
 pars2["7991-1901"]   = "srdp=1 admit=0"
 pars2["8553-9102"]   = "srdp=1 admit=0"
 pars2["8593-12705"]  = "srdp=1 admit=0"
 pars2["8998-12705"]  = "srdp=1 admit=0"
 pars2["9186-9101"]   = "srdp=1 admit=0"
 pars2["9487-9102"]   = "srdp=1 admit=0"
+
+# Found 9 sources
 
 runs.mk_runs(project, on, pars1, pars2)
