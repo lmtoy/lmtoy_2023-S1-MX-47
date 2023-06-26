@@ -1,11 +1,14 @@
 #  <obsnum>   <comment>     # <SLpipeline args>
 #
-104944 BAD
-104945 BAD
-105120 BAD
-105121 BAD
-105122 BAD
-105354 BAD
+104944 BAD  very noisy
+104945 BAD  noisy
+104946      very noisy
+
+105120 BAD noisy
+105121 BAD very noisy
+105122 BAD very noisy
+
+105354 BAD very noisy
 105355 BAD
 105356 BAD
 105474 BAD
@@ -41,15 +44,9 @@
 109201 BAD
 #                   found 39 BAD obsnums
 
-104944 very noisy
-104946 very noisy
-104945 noisy
+
 #
-105120 noisy
-105121 very noisy
-105122 very noisy
 #
-105354 very noisy
 #
 106195_106459 Detection ~110.2 GHz
 104790_105238 Detection ~110.7 GHz
