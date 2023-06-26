@@ -8,3 +8,14 @@
 105122 very noisy
 #
 105354 very noisy
+#
+106195_106459 Detection ~110.2 GHz
+104790_105238 Detection ~110.7 GHz
+106244_106276 Detection ~107.4 GHz
+107366_107383 No detection
+109178_109180 Detection ~107.1 GHz, short int time due to bad obsnums
+106091_106124 Detection ~110.2 GHz
+107226_107263 Detection ~110.7 GHz
+106026_106055 Detection ~107.4 GHz
+105791_105792 Detection ~110.6 GHz, short int time and high RMS due to bad obsnums
+109042_109066 Detection ~107.8 GHz
